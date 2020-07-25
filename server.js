@@ -5,7 +5,7 @@ app = express();
 app.use(express.static('build'));
 
 app.get('/',(req,res)=>{
-    app.send('index.html')
+    app.send('index')
 })
 
 app.listen(process.env.PORT || 3000,()=>console.log("server running"))
